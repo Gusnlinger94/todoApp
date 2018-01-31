@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //Crear schema
-var todoSchema = new mongoose.Schema({
+const todoSchema = new Schema({
   item: String
 });
 
-module.exports = mongoose.model('todo', todoSchema)
+const todo = mongoose.model('todo', todoSchema);
+
+module.exports = todo;
